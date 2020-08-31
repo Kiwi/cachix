@@ -73,7 +73,6 @@ library
     , resourcet
     , servant               >=0.14.1
     , servant-auth
-    , servant-auth-server
     , servant-auth-swagger
     , servant-client
     , servant-swagger
@@ -115,7 +114,6 @@ test-suite cachix-api-test
     , protolude
     , servant                  >=0.14.1
     , servant-auth
-    , servant-auth-server
     , servant-auth-swagger
     , servant-swagger
     , servant-swagger-ui-core

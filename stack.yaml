@@ -1,10 +1,21 @@
-resolver: lts-15.14
+resolver: nightly-2020-09-07
 packages:
 - cachix-api
 - cachix
 extra-deps:
-- servant-auth-client-0.4.0.0
+- servant-server-0.18
+- servant-client-0.18
+- servant-client-core-0.18
+- servant-swagger-1.1.10
+- servant-conduit-0.15.1
+- base64-bytestring-1.0.0.3
+- netrc-0.2.0.0
+- git: https://github.com/haskell-servant/servant-auth
+  commit: 100866acee84022ec4f292ecf1a1cfbf2c9fa9de
+  subdirs:
+    - servant-auth-swagger
+    - servant-auth
+    - servant-auth-client
 nix:
     packages: []
-    shell-file: ./nix/stack-shell.nix
     pure: false
